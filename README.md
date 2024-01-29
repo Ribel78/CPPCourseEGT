@@ -25,3 +25,15 @@
 **Online Shop** - classes with polymorphism - virtual function example.
 
 **Polymorphism** - polymorphism in classes.
+
+**Rectangle** - Class for a Cartesian rectangles that checks if the object is a square, finds the longest side and perimeter. Taking Point objects as parameters. Referencing.
+
+**RentACar** - Plymorphism, abstract virtual function, abstract base class.
+
+**School** - School class system with multiple classes, use of vectors.
+
+**Shapes** - Polymorphism, pointers to create new class objects, vectors of pointers.
+
+**Shipping Packages** - Polymorphism in class types - virtual functions, accessing vector elements using pointers.
+
+**Strings** - example using string objects.

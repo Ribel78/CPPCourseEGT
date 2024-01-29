@@ -25,7 +25,7 @@ void Account::debit(double amount){
     withdraw money from the Account and should ensure that the debit amount does not exceed the Account's balance. 
     If it does, the balance should be left unchanged and the function should print a message: "Debit amount exceeded account balance."    
     */
-   if(balance-amount >= 0){
+   if(balance - amount >= 0){
         this->balance -= amount;
    } else{
         cout << "Debit amount exceeded account balance" << endl;

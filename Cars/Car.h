@@ -1,7 +1,3 @@
-//
-// Created by Katya Daskalova on 1/4/24.
-//
-
 #ifndef CPPCLASSES_CAR_H
 #define CPPCLASSES_CAR_H
 #include <iostream>

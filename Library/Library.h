@@ -1,7 +1,5 @@
 #ifndef _Library_H_
 #define _Library_H_
-//try matching .h and .cpp files with class name
-//#include <XXX> //include nescessary libraries
 #include <iostream>
 #include <string>
 #include <vector>

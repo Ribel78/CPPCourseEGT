@@ -1,7 +1,3 @@
-//
-// Created by Katya Daskalova on 1/4/24.
-//
-
 #include "Car.h"
 
 Car::Car() {}

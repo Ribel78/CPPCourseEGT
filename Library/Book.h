@@ -1,7 +1,5 @@
 #ifndef _Book_H_
 #define _Book_H_
-//try matching .h and .cpp files with class name
-//#include <XXX> //include nescessary libraries
 #include "Author.h"
 #include <iostream>
 using namespace std;

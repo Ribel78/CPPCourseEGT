@@ -12,6 +12,10 @@
 
 **Classes** - Class definition and construction example.
 
+**C++Coding Task #1 310124** - first task from 31.01.24 - description in Task.h
+
+**C++Coding Task #2 310124** - second task from 31.01.24 - description in Task.h
+
 **Date - operator overloading** - updrading provided demo with additional functionality - operator overloading for prefix and postfic decrement operator for the Date class object.
 
 **FootballFederation** - more complex class example - work in progress.

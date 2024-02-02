@@ -27,6 +27,8 @@ public:
     void print();
     virtual float calculatePrice(int) = 0;
 
+    virtual ~Drink(){};//if at least 1 virtual function - add virtual destructor 
+
 private:
     string name;
     float price;

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip> //used to set precision (number of digits per value)
 #include <sstream> //Header providing string stream classes
 #include <vector>
 #include <memory> //This header is part of the dynamic memory management library - unique_ptr
@@ -114,7 +115,9 @@ public:
         int roadLen = road->totalLength(); //variable to store Road lenght 
         double dist = maxSpeed * (sec / 3600) * 1000; //distance passed for the tick seconds on the current segment with max speed
         //speed*time = distance - (km/h)*(sec/3600- sec to h conversion)*(1000 - km to m conversion) - result is in meters
-        std::cout << "Car " << this->name << " covered " << dist << "m in " << sec <<  "s at: " << maxSpeed << "km/h. ";
+        //std::cout << std::setprecision(2);
+        std::cout << std::setprecision(4) 
+        << "Car " << this->name << " covered " << dist << "m in " << sec <<  "s at: " << maxSpeed << "km/h. ";
         meters += dist; //
         if (meters >= roadLen) {
             std::cout <<" Reached end of Road " << road->roadName<< std::endl;
@@ -122,7 +125,8 @@ public:
             meters = 0;
         } else {
             setDamage(road->getHoles(meters));
-            std::cout << "Loc: " << meters <<" m ("<< (meters/roadLen)*100 << "\%) on Road " << road->roadName 
+            std::cout << std::setprecision(4) 
+            << "Loc: " << meters <<" m ("<< (meters/roadLen)*100 << "\%) on Road " << road->roadName 
             << " current segment has " << road->getHoles(meters) << " holes. Damage: " << getDamage()
             << std::endl;
         }

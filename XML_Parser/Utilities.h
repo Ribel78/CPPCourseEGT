@@ -111,3 +111,23 @@ void printXML2Employee2(vector<Employee2>& employeesXML2){
 
     }
 }
+
+void printX(vector<Employee>& employeesXML){
+    for (Employee e : employeesXML){
+        cout    << "Emplyee name: " << e.getName() 
+                << "\tJob type: " << e.getType() 
+                << "\tAge: " << e.getAge() << endl;
+    }
+}
+
+void printX(vector<Employee2>& employeesXML2){
+    for (Employee2 e : employeesXML2){
+        cout    << "Emplyee name: " << e.getName() 
+                << "\tJob type: " << e.getType() 
+                << "\tAge: " << e.getAge() 
+                << "\t Building: " << e.workLocation().getBuilding()
+                << "\t Floor: " << e.workLocation().getFloor()
+                << "\t Desc: " << e.workLocation().getDesc()
+                << endl;
+    }
+}

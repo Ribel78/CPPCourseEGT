@@ -27,7 +27,16 @@ int main(){
     cout << "List size: " << employeesXML2.size() << endl;    
     printXML2Employee2(employeesXML2);
 
-
+    cout << endl << endl;
+    // Example of function overloading
+    cout << endl << endl;
+    cout << "Example of function overloading\n";
+    cout << endl << endl;
+    
+    cout << "Task1\n";
+    printX(employeesXML);
+    cout << "Task2\n";
+    printX(employeesXML2);
 
     // Original example demonstrating XML file loading and parsing
     // xml_document doc;

@@ -43,3 +43,5 @@
 **ShuffleCards** - Shuffle Cards using riffle shuffle  (homework).
 
 **Strings** - example using string objects.
+
+**XML_Parser** - homework asssgnment - Create Emplyee classes to receive parsed data from given XML file templates, based on given example code. Utility functions to create vector of the class objects and utility functions to print the data from the objects in the vectors.

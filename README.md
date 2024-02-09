@@ -36,6 +36,8 @@
 
 **School** - School class system with multiple classes, use of vectors.
 
+**SDL Library/Task1** - Homework from SDL Libary lectures
+
 **Shapes** - Polymorphism, pointers to create new class objects, vectors of pointers.
 
 **Shipping Packages** - Polymorphism in class types - virtual functions, accessing vector elements using pointers.

@@ -15,7 +15,7 @@ bool Game::init(const char* title, int xpos, int ypos, int width, int height, in
             {
                 std::cout << "Renderer initialization was successful\n";
 					//Set some drawing parameters
-                SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255); //current drawing color (white)
+                SDL_SetRenderDrawColor(renderer, 125, 220, 125, 255); //current drawing color (green), fills the window.
                 	// ADD PICTURE TO WINDOW
 					//way to create collection of pixels from bmp image (SDL_LoadBMP returns ptr)
                 SDL_Surface* tempSurface = SDL_LoadBMP("assets/Baby.bmp"); //temporary variable

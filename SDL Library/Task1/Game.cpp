@@ -79,7 +79,7 @@ void Game::update() {
 	SDL_GetWindowSize(window, &ww, &wh);
 	destinationRectangle.y = (wh - destinationRectangle.h) / 2; // center the image vertically
 
-	if(SDL_GetTicks()%50 == 0){
+	if(SDL_GetTicks()%50 == 0){ //framerate - kind of
 		destinationRectangle.x += speed; //advance in speed steps
 		if((destinationRectangle.x >= (ww - destinationRectangle.w))){
 			destinationRectangle.x = ww - destinationRectangle.w; //bring back inside window

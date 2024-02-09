@@ -74,6 +74,17 @@ void Game::handleEvents() {
 	if (SDL_PollEvent(&event)) {
 		switch (event.type) {
 		case SDL_QUIT: running = false; break;
+		case SDL_MOUSEMOTION : {
+			//change rectangle colors based on mouse position
+			int x, y;
+			SDL_GetMouseState(&x, &y);
+			int ww, wh;
+			SDL_GetWindowSize(window, &ww, &wh);
+			Shapes::rgb[0] = (int)(((double)x/ww)*255);
+			Shapes::rgb[1] = (int)(((double)y/wh)*255);
+			Shapes::rgb[2] = (int)(((((double)x/ww)+((double)y/wh))/2)*255);
+
+		}; break;
 		default: break;
 		}
 	}

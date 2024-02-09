@@ -187,12 +187,13 @@ void Shapes::drawEllipse(SDL_Renderer *renderer, int xc, int yc, int rx, int ry)
 
 void Shapes::drawRectangleWithBorder(SDL_Renderer *renderer, int posX, int posY, int width, int height, int borderSize){
 
-	SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+	SDL_SetRenderDrawColor(renderer, Shapes::rgb[0], Shapes::rgb[1], Shapes::rgb[2], 255);
 	SDL_Rect outerRect = {posX, posY, width, height};
 	SDL_RenderFillRect(renderer, &outerRect);
 
-	SDL_SetRenderDrawColor(renderer, 255, 255, 255, 0);
+	SDL_SetRenderDrawColor(renderer, Shapes::rgb[1], Shapes::rgb[2], Shapes::rgb[0], 255);
 	SDL_Rect innerRect = {posX+borderSize, posY+borderSize, width-(2*borderSize), height-(2*borderSize)};
 	SDL_RenderFillRect(renderer, &innerRect);
 
 }
+int Shapes::rgb[3] = {0,0,0};

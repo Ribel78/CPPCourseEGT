@@ -36,7 +36,9 @@
 
 **School** - School class system with multiple classes, use of vectors.
 
-**SDL Library/Task1** - Homework from SDL Libary lectures
+**SDL Library/Task1** - Homework from SDL Libary lectures - Task 1 - description in the project folder
+
+**SDL Library/Tasks-Shapes** - Homeworks from SDL Libary lectures related to Shapes including Tasks 2,3,4,6,and 10 - description in the project folder
 
 **Shapes** - Polymorphism, pointers to create new class objects, vectors of pointers.
 

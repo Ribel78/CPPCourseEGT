@@ -24,6 +24,7 @@ bool Game::init(const char* title, int xpos, int ypos, int width, int height, in
 					//deletes the temporary variable no longer needed
                 SDL_FreeSurface(tempSurface);
 					//retrieve the basic settings of a texture, including the format, access, width, and height
+					//that means it sets the last two given pointer variables with the texture(image)'s widht and height
 				SDL_QueryTexture(texture, NULL, NULL, &sourceRectangle.w, &sourceRectangle.h);
 
 					//initialize the coords and dimensions of source and destination SDL_Rect rectangles
@@ -38,7 +39,7 @@ bool Game::init(const char* title, int xpos, int ypos, int width, int height, in
                 destinationRectangle.y = 0;
 				destinationRectangle.w = 110;//2x source size
                 destinationRectangle.h = 110;
-
+				
             }
 			else {
 				std::cout << "renderer init failed\n";

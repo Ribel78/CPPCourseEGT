@@ -197,3 +197,4 @@ void Shapes::drawRectangleWithBorder(SDL_Renderer *renderer, int posX, int posY,
 
 }
 int Shapes::rgb[3] = {0,0,0};
+int Shapes::reguarPolygonSides = 3;

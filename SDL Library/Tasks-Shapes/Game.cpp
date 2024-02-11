@@ -33,8 +33,10 @@ bool Game::init(const char* title, int xpos, int ypos, int width, int height, in
 	running = true;
 	return true;
 }
+
+
 void Game::render() {
-	SDL_SetRenderDrawColor(renderer, 0x88, 0x88, 0x88, 0xFF); //set background color
+	SDL_SetRenderDrawColor(renderer, 0xAA, 0xBB, 0xCC, 0xFF); //set background color
 	SDL_RenderClear(renderer);
 
 	int ww, wh;
@@ -53,9 +55,13 @@ void Game::render() {
 	// Draw Pentagon by given side in pixels (right)
 	Shapes::drawPentagon(renderer, ww/4, wh/2, 120);
 
-	SDL_SetRenderDrawColor(renderer, 0xFF, 0x00, 0x00, 0xFF);
+	//SDL_SetRenderDrawColor(renderer, 0xFF, 0x00, 0x00, 0xFF);
+	SDL_SetRenderDrawColor(renderer, Shapes::rgb[2], Shapes::rgb[0], Shapes::rgb[1],  255);
+	
 	// Draw Regular Pentagon by given number of sides and radius in pixels (center)
-	Shapes::drawRegularPolygon(renderer, ww/2, wh/2, 12, 120);
+
+	int & nSides = Shapes::reguarPolygonSides;
+	Shapes::drawRegularPolygon(renderer, ww/2, wh/2, nSides, 120);
 
 	SDL_SetRenderDrawColor(renderer, 0xFF, 0x00, 0xFF, 0xFF);
 	// Draw Ellipse using Midpoint Ellipse Algorithm - input ellipse center coordinates and x and y radius
@@ -85,6 +91,17 @@ void Game::handleEvents() {
 			Shapes::rgb[2] = (int)(((((double)x/ww)+((double)y/wh))/2)*255);
 
 		}; break;
+		case SDL_KEYDOWN : {
+			int & nSides = Shapes::reguarPolygonSides;
+			if(event.key.keysym.sym == SDLK_UP){
+				(nSides >= 3) ? nSides += 1 : nSides;
+			}
+			if(event.key.keysym.sym == SDLK_DOWN){
+				(nSides > 3) ? nSides -= 1 : nSides;
+			}
+
+		}; break;
+
 		default: break;
 		}
 	}

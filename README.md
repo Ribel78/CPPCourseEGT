@@ -38,7 +38,13 @@
 
 **SDL Library/Task1** - Homework from SDL Libary lectures - Task 1 - description in the project folder
 
+![alt text](https://github.com/Ribel78/CourseCode/blob/master/SDL%20Library/Task1/Demo.gif)
+
 **SDL Library/Tasks-Shapes** - Homeworks from SDL Libary lectures related to Shapes including Tasks 2, 3, 4, 6, 9 and 10 - description in the project folder
+
+![alt text](https://github.com/Ribel78/CourseCode/blob/master/SDL%20Library/Tasks-Shapes/Demo.gif)
+
+**Tasks-Images-Events** - Homework from SDL Libary lectures related to showing / hiding images and use of mouse and keyboard events - Tasks 5 and 7 - description in the project folder
 
 ![alt text](https://github.com/Ribel78/CourseCode/blob/master/SDL%20Library/Tasks-Images-Events/Demo.gif)
 

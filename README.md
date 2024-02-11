@@ -40,6 +40,8 @@
 
 **SDL Library/Tasks-Shapes** - Homeworks from SDL Libary lectures related to Shapes including Tasks 2, 3, 4, 6, 9 and 10 - description in the project folder
 
+![alt text](https://github.com/Ribel78/CourseCode/blob/master/SDL%20Library/Tasks-Images-Events/Demo.gif)
+
 **Shapes** - Polymorphism, pointers to create new class objects, vectors of pointers.
 
 **Shipping Packages** - Polymorphism in class types - virtual functions, accessing vector elements using pointers.

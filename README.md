@@ -14,7 +14,7 @@
 
 [**CinemaSystem**](https://github.com/Ribel78/CourseCode/tree/master/CinemaSystem) - exercise - create a cinema system - classes, data storing, accessing, searching. 
 
-[**Online Shop**][) - more complex Class example with multiple classes and using vector type members.
+[**Online Shop**](https://github.com/Ribel78/CourseCode/tree/master/Online%20Shop) - more complex Class example with multiple classes and using vector type members.
 
 [**Classes**](https://github.com/Ribel78/CourseCode/tree/master/Classes) - Class definition and construction example.
 
@@ -49,6 +49,10 @@
 [**SDL Library/Tasks-Images-Events**](https://github.com/Ribel78/CourseCode/tree/master/SDL%20Library/Tasks-Images-Events) - Homework from SDL Libary lectures related to showing / hiding images and use of mouse and keyboard events - Tasks 5 and 7 - description in the project folder
 
 ![alt text](https://github.com/Ribel78/CourseCode/blob/master/SDL%20Library/Tasks-Images-Events/Demo.gif)
+
+[**SDL Library/Task8**](https://github.com/Ribel78/CourseCode/tree/master/SDL%20Library/Task8) - Homework from SDL Libary lectures related to animating sprite sheets and use of mouse events - description in the project folder
+
+![alt text](https://github.com/Ribel78/CourseCode/blob/master/SDL%20Library/Task8/Demo.gif)
 
 [**School**](https://github.com/Ribel78/CourseCode/tree/master/School) - School class system with multiple classes, use of vectors.
 

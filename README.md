@@ -50,7 +50,7 @@
 
 ![alt text](https://github.com/Ribel78/CourseCode/blob/master/SDL%20Library/Tasks-Images-Events/Demo.gif)
 
-[**SDL Library/Task8**](https://github.com/Ribel78/CourseCode/tree/master/SDL%20Library/Tasks-Images-Events) - Homework from SDL Libary lectures related to animating sprite sheets and use of mouse events - description in the project folder
+[**SDL Library/Task8**](https://github.com/Ribel78/CourseCode/tree/master/SDL%20Library/Task8) - Homework from SDL Libary lectures related to animating sprite sheets and use of mouse events - description in the project folder
 
 ![alt text](https://github.com/Ribel78/CourseCode/blob/master/SDL%20Library/Task8/Demo.gif)
 

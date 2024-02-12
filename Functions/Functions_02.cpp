@@ -15,6 +15,8 @@ int eGCD(int a, int b);
 
 //Returns binary representation of an integer as a string
 string toBinary(int number);
+// not recursive but to complement the above function - converting back from binary to decimal
+int toDecimal(string sNumber); 
 
 int main(){
     cout << "Find greatest common divisor (GCD)\n";
@@ -29,7 +31,7 @@ int main(){
     int number;
     cout << "Enter Integer to find its Binary form\n";
     cin >> number;
-    cout << toBinary(number);
+    cout << toBinary(number) << " converted back to " << toDecimal(toBinary(number))<< endl;
     cout << endl;
 
     return 0;
@@ -58,4 +60,16 @@ string toBinary(int number){
         return to_string ( number % 2 );
     }      
         return toBinary( number /= 2 ) += to_string (number % 2);
+}
+
+int toDecimal(string sNumber){
+    int decimal = 0; int exp2 = 1;
+    for (int i = 0; i < sNumber.size(); i++){
+        for (int j = 0; j < sNumber.size()-i-1; j++){ // exponent
+            exp2 *= 2;
+        }
+        decimal += ((sNumber[i] == '1')? 1:0) * exp2;
+        exp2 = 1;
+    }
+    return decimal;
 }

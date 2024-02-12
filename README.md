@@ -14,7 +14,7 @@
 
 [**CinemaSystem**](https://github.com/Ribel78/CourseCode/tree/master/CinemaSystem) - exercise - create a cinema system - classes, data storing, accessing, searching. 
 
-[**Online Shop**][) - more complex Class example with multiple classes and using vector type members.
+[**Online Shop**][(https://github.com/Ribel78/CourseCode/tree/master/Online%20Shop) - more complex Class example with multiple classes and using vector type members.
 
 [**Classes**](https://github.com/Ribel78/CourseCode/tree/master/Classes) - Class definition and construction example.
 

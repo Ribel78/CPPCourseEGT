@@ -30,25 +30,26 @@ int main(){
     cout << "Enter Integer to find its Binary form\n";
     cin >> number;
     cout << toBinary(number);
+    cout << endl;
 
     return 0;
 }
 
 int GCD (int a, int b){
     if (b == 0){
-        cout <<"b=0\n";
+        //cout <<"b=0\n";
         return a;
     }
-    cout << "GCD("<< a << "," << b <<")\n";
+    //cout << "GCD("<< a << "," << b <<")\n";
     return GCD(b, a%b);
 }
 
 int eGCD(int a, int b){
     if (a==b){
-        cout <<"a=b\n";
+        //cout <<"a=b\n";
         return a;
     }
-    cout << "eGCD("<< a << "," << b <<")\n";
+    //cout << "eGCD("<< a << "," << b <<")\n";
     return eGCD((a>b)?a-b:a,(b>a)?b-a:b);
 }
 

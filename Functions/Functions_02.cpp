@@ -33,6 +33,7 @@ int main(){
     cin >> number;
     cout << toBinary(number) << " converted back to " << toDecimal(toBinary(number))<< endl;
     cout << endl;
+    cout << "Which number is 1001011001? " << toDecimal("1001011001") << endl;
 
     return 0;
 }

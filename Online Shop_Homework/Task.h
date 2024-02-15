@@ -1,3 +1,4 @@
+/*
 Drinks                                      Food        
 
 Alcoholic    NoAlcoholic    Tea  Coffee     Biscuits  Chocolates   Nuts  
@@ -35,3 +36,4 @@ class
 
 Метод който връща 10-те клиенти с поръчки съдържащи 
 напитка от даден тип с оборот на поръчката им над дадена сума
+*/

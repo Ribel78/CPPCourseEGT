@@ -1,0 +1,5 @@
+/*
+Create Library class that contains a vector of Book objects which in turn have Author object as member variable
+Test functionality
+Implement printData and findBook for the Library class
+*/

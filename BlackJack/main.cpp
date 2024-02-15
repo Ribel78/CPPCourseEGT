@@ -43,6 +43,7 @@ Player dealer;
 
 // TO DO Create Player, GameLogic and GameAssets classes - link with SDL
 
+// Test the Dealer's Shoe generation. Works!!!
 vector<Card> hand;
 Shuffler shuffler(6,true);
 queue<Card> dealerShoe = shuffler.createDealerShoe();

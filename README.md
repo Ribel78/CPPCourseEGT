@@ -12,7 +12,7 @@
 
 [**Cars**](https://github.com/Ribel78/CourseCode/tree/master/Cars) - simple Car class - Using a function with user input that returns a Car object. Adding the created class object in a vector.
 
-[**CinemaSystem**](https://github.com/Ribel78/CourseCode/tree/master/CinemaSystem) - exercise - create a cinema system - classes, data storing, accessing, searching. 
+[**CinemaSystem_Homework**](https://github.com/Ribel78/CPPCourseEGT/tree/master/CinemaSystem_Homework) - exercise - create a cinema system - classes, data storing, accessing, searching. 
 
 [**Online Shop**](https://github.com/Ribel78/CourseCode/tree/master/Online%20Shop) - more complex Class example with multiple classes and using vector type members.
 

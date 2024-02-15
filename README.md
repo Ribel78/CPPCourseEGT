@@ -18,7 +18,7 @@
 
 [**Classes**](https://github.com/Ribel78/CourseCode/tree/master/Classes) - Class definition and construction example.
 
-[**Date - operator overloading**](https://github.com/Ribel78/CourseCode/tree/master/Date%20-%20operator%20overloading) - updrading provided demo with additional functionality - operator overloading for prefix and postfic decrement operator for the Date class object.
+[**Date_Operator_Overloading_Homework**](https://github.com/Ribel78/CPPCourseEGT/tree/master/Date_Operator_Overloading_Homework) - updrading provided demo with additional functionality - operator overloading for prefix and postfic decrement operator for the Date class object.
 
 [**EvenOdd_and_ShapeOverride_Tasks_Homework**](https://github.com/Ribel78/CPPCourseEGT/tree/master/EvenOdd_and_ShapeOverride_Tasks_Homework) - answers to two test tasks - conditions are in the respective cpp files
 

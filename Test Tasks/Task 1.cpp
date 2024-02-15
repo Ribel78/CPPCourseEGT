@@ -15,7 +15,7 @@ int main()
 	// std::cout<<"The number "<< number <<" is " << ((number%2==0)?"Even":"Odd") << std::endl;
 
 	int number[3];
-	std::cout << "Enter 3 numbers:";
+	std::cout << "Enter 3 positive integers :";
 	std::cin >> number[0] >> number[1] >> number[2];
 	for (int i = 0; i < 3; i++){
 	std::cout<<"The number "<< number[i] <<" is " << ((number[i]%2==0)?"Even":"Odd") << std::endl;

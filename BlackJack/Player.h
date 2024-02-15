@@ -2,7 +2,7 @@
 #define PLAYER_H
 
 #include <vector>
-#include "Card.h"
+#include "Shuffler.h"
 using namespace std;
 
 class Player{

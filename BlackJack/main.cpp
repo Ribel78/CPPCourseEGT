@@ -5,7 +5,7 @@
 #include <random>
 #include <chrono>
 
-#include "Card.h"
+#include "Shuffler.h"
 #include "Player.h"
 
 using namespace std;
@@ -14,21 +14,22 @@ using namespace std;
 Calculates all posible hand values (part of PlayerClass)
 _vector<Card>& - dealt cards from a hand
 _vector<int>&  - collection of int to store the hand values
+Updates the provided vector references
 */
 void calcHand(vector<Card>& cards, vector<int>& handValues){
     
     int sum = 0;
     int aces = 0;
     for(auto card : cards){ //get partial sum of just non-Ace cards
-        if (card.getKind() == CA){ // count aces
+        if (card.kind == CA){ // count aces
             aces+=1;
         }else{
-            sum += ((card.getKind() <= 10) ? card.getKind() : 10);
+            sum += ((card.kind <= 9) ? card.kind + 1 : 10); //+1 compensate for 0 indexing
         }
     }
-    sum += aces;
+    sum += aces; // add the acces count to the sum
     handValues.push_back(sum);
-    for (int i=0; i < aces ; i++){
+    for (int i = 0 ; i < aces ; i++){ // for the count of aces calculate the rest of possible sums
         sum += 10;
         handValues.push_back(sum);
     }
@@ -42,36 +43,32 @@ Player dealer;
 
 // TO DO queue<Card> dealerShoe (box with randomized decks of Cards)
 
-// Testing Card - test with some player/dealer hands later
-
-Card c1(C4, H, 1);
-Card c2(C5, D, 1);
-Card c3(CA, S, 1);
+// Testing CardX struct - test with some player/dealer hands later
+// CardX c1 = {C4, H, 1};
+// CardX c2 = {C5, D, 1};
+// CardX c3 = {CA, S, 1};
 
 vector<Card> hand;
-hand.push_back(c1);  hand.push_back(c2);  hand.push_back(c3);  //hand.push_back(c4);
-//hand.push_back(c5);  hand.push_back(c6);  hand.push_back(c7);  hand.push_back(c8);
-
+Shuffler shuffler(6,true);
+queue<Card> dealerShoe = shuffler.createDealerShoe();
+cout << "dealerShoe.size() "<< dealerShoe.size() << endl;
+int count = 0;
 vector<int> handValues;
-
-calcHand(hand, handValues);
-
-for (auto elem : handValues){
-    cout << "Total hand value: " << elem << endl;;
+while (!dealerShoe.empty()){
+        cout <<"Kind: " << dealerShoe.front().kind << " Suit: " << dealerShoe.front().suit << endl;
+        hand.push_back(dealerShoe.front());
+        dealerShoe.pop();
+        count+=1;
+        if (count%3 == 0){
+            calcHand(hand, handValues); // updates vectors
+            for (auto elem : handValues){
+                cout << "Total hand value: " << elem << endl;;
+            }
+            cout << "dealerShoe.size() "<< dealerShoe.size() << endl;
+            hand.resize(0);
+            handValues.resize(0);
+        }
 }
-
-
-//shuffle testing code src: https://linuxhint.com/shuffle-vs-random-shuffle-cpp/
-
-vector<int> vec {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-//unsigned seed = chrono::system_clock::now().time_since_epoch().count(); // good for random shuffle on each run
-unsigned seed = 23535435; // we need a "stable" seed if we want to reload the game with the same dealerShoe container? Need to track number of played cards
-shuffle(vec.begin(), vec.end(), default_random_engine(seed));
-cout << "shuffled elements are:";
-for (int& i : vec)
-cout << ' ' << i;
-cout << endl;
- 
         return 0;
 }
 

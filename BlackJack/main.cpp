@@ -41,12 +41,7 @@ int main(){
 Player player;
 Player dealer;
 
-// TO DO queue<Card> dealerShoe (box with randomized decks of Cards)
-
-// Testing CardX struct - test with some player/dealer hands later
-// CardX c1 = {C4, H, 1};
-// CardX c2 = {C5, D, 1};
-// CardX c3 = {CA, S, 1};
+// TO DO Create Player, GameLogic and GameAssets classes - link with SDL
 
 vector<Card> hand;
 Shuffler shuffler(6,true);

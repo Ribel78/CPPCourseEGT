@@ -36,7 +36,7 @@ void calcHand(vector<Card>& cards, vector<int>& handValues){
 }
 
 int main(){
-
+//Work in progress - objects and functions are subject to change
 //We need two players
 Player player;
 Player dealer;

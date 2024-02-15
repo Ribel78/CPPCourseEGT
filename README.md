@@ -62,7 +62,7 @@
 
 [**ShuffleCards**](https://github.com/Ribel78/CourseCode/tree/master/ShuffleCards) - Shuffle Cards using riffle shuffle  (homework).
 
-**Test Tasks** - answers to two test tasks - conditions are in the respective cpp files
+[**Test Tasks**](https://github.com/Ribel78/CourseCode/tree/master/Test%20Tasks) - answers to two test tasks - conditions are in the respective cpp files
 
 [**Strings**](https://github.com/Ribel78/CourseCode/tree/master/Strings) - examples using string objects.
 

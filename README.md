@@ -20,6 +20,8 @@
 
 [**Date - operator overloading**](https://github.com/Ribel78/CourseCode/tree/master/Date%20-%20operator%20overloading) - updrading provided demo with additional functionality - operator overloading for prefix and postfic decrement operator for the Date class object.
 
+[**EvenOdd_and_ShapeOverride_Tasks_Homework**](https://github.com/Ribel78/CPPCourseEGT/tree/master/EvenOdd_and_ShapeOverride_Tasks_Homework) - answers to two test tasks - conditions are in the respective cpp files
+
 [**FootballFederation**](https://github.com/Ribel78/CourseCode/tree/master/FootballFederation) - more complex class example - work in progress.
 
 [**Functions**](https://github.com/Ribel78/CourseCode/tree/master/Functions) - Functions definition examples.
@@ -63,9 +65,5 @@
 [**ShuffleCards**](https://github.com/Ribel78/CourseCode/tree/master/ShuffleCards) - Shuffle Cards using riffle shuffle  (homework).
 
 [**Strings**](https://github.com/Ribel78/CourseCode/tree/master/Strings) - examples using string objects.
-
-[**Test Tasks**](https://github.com/Ribel78/CourseCode/tree/master/Test%20Tasks) - answers to two test tasks - conditions are in the respective cpp files
-
-
 
 [**XML_Parser**](https://github.com/Ribel78/CourseCode/tree/master/XML_Parser) - homework asssgnment - Create Emplyee classes to receive parsed data from given XML file templates, based on given example code. Utility functions to create vector of the class objects and utility functions to print the data from the objects in the vectors.

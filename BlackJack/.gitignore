@@ -1,0 +1,13 @@
+**.exe
+!.gitignore
+!**.cpp
+!**.h
+!**.xml
+!**.txt
+!**.bmp
+!**.jpeg
+!**.jpg
+!**.png
+!**.json
+!**.gif
+!**.md

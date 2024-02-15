@@ -38,7 +38,7 @@ int main()
    cout << "--d4 is " << --d4 << endl;
    cout << "  d4 is " << d4 << endl;
 
-   cout << "\n\nTesting spcial cases with overloaded decrementing operators:\n";
+   cout << "\n\nTesting special cases with overloaded decrementing operators:\n";
    cout << "\n\nNon-leap year:\n";
    Date d5( 3, 1, 2023 );
    cout << "  d5 is " << d5 << endl;
